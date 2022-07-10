@@ -1,0 +1,107 @@
+.messenger {
+  height: calc(100vh - 70px);
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.chatMenu {
+  flex: 2.7;
+}
+
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.chatBox {
+  flex: 5.5;
+}
+
+.chatBoxWrapper {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
+  height: 90px;
+  padding: 10px;
+}
+
+
+.dec{
+  width:120px;
+}
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  color: rgb(0, 0, 0);
+}
+
+.chatOnline {
+  flex: 3;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dec{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  ;
+}
+.noConversationText {
+  position: absolute;
+  margin-left: 300px; 
+ top: 10%;
+  font-size: 20px;
+  color: rgb(92, 88, 88);
+  cursor: default;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .chatMenu {
+    flex: 1;
+  }
+
+  .chatMenuInput {
+    display: none;
+  }
+
+  .chatBox{
+    flex: 10;
+  }
+
+  .chatOnline{
+    flex: 1px;
+  }
+}
